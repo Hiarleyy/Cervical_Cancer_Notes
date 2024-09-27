@@ -48,7 +48,6 @@ plt.show()
 2. Cria um mapa de calor da matriz de correlação usando [`seaborn.heatmap`](vscode-file://vscode-app/c:/Users/Marcos%20Hiarley/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html), com anotações das correlações, um esquema de cores 'coolwarm' e linhas de grade com largura de 0.5.
 3. Exibe o gráfico gerado.
 
-Testando 
 
 
 
