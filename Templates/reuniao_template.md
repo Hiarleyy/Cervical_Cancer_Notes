@@ -1,5 +1,5 @@
 ---
-Status: 
+Status: Ativo
 data: 
 tags:
   - meeting
