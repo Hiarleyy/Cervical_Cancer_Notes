@@ -47,6 +47,52 @@ plt.show()
 1. Configura o tamanho da figura para 12x8 polegadas.
 2. Cria um mapa de calor da matriz de correlação usando [`seaborn.heatmap`](vscode-file://vscode-app/c:/Users/Marcos%20Hiarley/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html), com anotações das correlações, um esquema de cores 'coolwarm' e linhas de grade com largura de 0.5.
 3. Exibe o gráfico gerado.
+---
+
+# Sistemas de controle
+
+### Modelagem -(mecânica):
+
+**V(t) --> velocidade,**
+**F(t) --> força,**
+## Princípios físicos (Leis)
+
+- **Princípio da aceleração:**
+
+- **Força contrária ao movimento:** 
+$$
+MdV(t)/dt = U(t) - bV(t)
+$$
+- **Formato em equação** **diferencial**: 
+$$
+MdV(t)/dt + bV(t) = U(t)
+$$
+- **L.I.T (Sistemas Lineares no tempo):**
+
+## Transformada de Laplace:
+
+- **Equação atual:**
+$$
+Mdv(t)/dt + bV(t) = u(t)
+$$
+- **Transformada de Laplace:** 
+$$M<= V(s) + bV(s) = U(s)$$
+
+$$(MS+b)V(s) = U(s) $$
+
+- **Função de transferência:**
+$$V(s)/U(s) = 1/ M<=b $$
+$$
+G(s) = 1/M S + b $$
+---
+## Sistema Massa - Mola -Amortecedor 
+
+$$
+$$
+
+
+
+
 
 
 
