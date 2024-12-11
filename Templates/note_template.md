@@ -2,9 +2,7 @@
 Status: 
 data: 
 tags: 
-Contribuição:
-  - Robert
-  - Hiarley
+Contribuição: []
 ---
 ---
 
