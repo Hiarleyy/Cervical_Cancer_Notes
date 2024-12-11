@@ -49,43 +49,7 @@ plt.show()
 3. Exibe o gráfico gerado.
 ---
 
-# Sistemas de controle
 
-### Modelagem -(mecânica):
-
-**V(t) --> velocidade,**
-**F(t) --> força,**
-## Princípios físicos (Leis)
-
-- **Princípio da aceleração:**
-
-- **Força contrária ao movimento:** 
-$$
-MdV(t)/dt = U(t) - bV(t)
-$$
-- **Formato em equação** **diferencial**: 
-$$
-MdV(t)/dt + bV(t) = U(t)
-$$
-- **L.I.T (Sistemas Lineares no tempo):**
-
-## Transformada de Laplace:
-
-- **Equação atual:**
-$$
-Mdv(t)/dt + bV(t) = u(t)
-$$
-- **Transformada de Laplace:** 
-$$M<= V(s) + bV(s) = U(s)$$
-
-$$(MS+b)V(s) = U(s) $$
-
-- **Função de transferência:**
-$$V(s)/U(s) = 1/ M<=b $$
-$$
-G(s) = 1/M S + b $$
----
-## Sistema Massa - Mola -Amortecedor 
 
 $$
 $$
