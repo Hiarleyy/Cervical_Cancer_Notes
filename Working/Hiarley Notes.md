@@ -129,3 +129,73 @@ Reference: "[[Gradient-Based Learning Applied.pdf]]"
 
 - Os GTNs são extensões de redes neurais tradicionais, onde a informação de estado é representada por grafos.
 - Cada módulo de um GTN processa grafos para produzir novos grafos, e os gradientes são calculados para treinar todos os módulos conjuntamente.
+---
+### CONVOLUTIONAL NEURAL NETWORKS FOR I SOLATED CHARACTER RECOGNITION
+
+- **Aprendizado a partir de entradas brutas**:
+    
+    - Redes convolucionais (CNNs) conseguem aprender diretamente de imagens normalizadas por tamanho e centralizadas, reduzindo a dependência de extratores de características projetados manualmente.
+    - Isso contrasta com abordagens tradicionais que separam a extração de características da classificação.
+- **Limitações das redes totalmente conectadas**:
+    
+    - **Explosão de parâmetros**: Camadas totalmente conectadas para imagens de entrada grandes resultam em um número impraticável de pesos (por exemplo, dezenas de milhares), aumentando a capacidade do sistema e exigindo grandes conjuntos de treinamento.
+    - **Restrições de hardware**: Requisitos de memória dessas arquiteturas podem dificultar a implementação prática.
+    - **Falta de invariância**: Redes totalmente conectadas não possuem invariâncias embutidas a translações, distorções e variações de posição nos dados de entrada.
+- **Benefícios das CNNs**:
+    
+    - **Compartilhamento de pesos**: As CNNs utilizam configurações de pesos replicados em regiões espaciais, obtendo invariância a translações de forma natural e reduzindo o número de parâmetros.
+    - **Consciência da topologia de entrada**: Camadas convolucionais respeitam a estrutura local 2D das imagens, aproveitando correlações espaciais entre pixels. Isso permite que as CNNs detectem padrões, como bordas e cantos, de maneira mais eficiente.
+    - **Eficiência**: Restringir os campos receptivos das unidades ocultas a regiões locais reduz a complexidade computacional e melhora a capacidade da rede de aprender características distintivas.
+- **Desafios com pré-processamento**:
+    
+    - Imagens de caracteres requerem pré-processamento (por exemplo, normalização de tamanho, centralização), mas esses passos não são perfeitos. A variabilidade nos estilos de escrita e nos métodos de pré-processamento (como normalização em nível de palavra) introduz desafios, como variações de posição, inclinação e tamanho.
+- **Design de redes convolucionais**:
+    
+    - Estruturando redes para extrair e combinar características locais, as CNNs conseguem generalizar melhor diante de variações nos dados de entrada, enquanto reduzem a redundância nas instâncias de treinamento.
+
+
+### Design do LeNet-5: Arquitetura para Reconhecimento de Dígitos
+
+#### **Estrutura Geral**
+O LeNet-5 é composto por sete camadas treináveis (excluindo a entrada) que incluem camadas convolucionais, de subamostragem (pooling) e totalmente conectadas. Cada camada foi projetada para realizar uma tarefa específica, como extração de características, redução da dimensionalidade e classificação.
+
+---
+
+#### **2. Componentes do LeNet-5**
+
+1. **Entrada**:
+    
+    - **Dimensão**: Uma imagem de tamanho fixo 32×3232 \times 3232×32 pixels, em escala de cinza (1 canal).
+    - **Pré-processamento**: Antes de ser inserida no modelo, a imagem passa por normalização (centralização e redimensionamento), garantindo uniformidade.
+2. **Camada Convolucional 1 (C1)**:
+    
+    - **Operação**: Convolução com 6 filtros (5×55 \times 55×5), produzindo 6 mapas de características (feature maps).
+    - **Saída**: Cada mapa de características tem tamanho 28×2828 \times 2828×28 (redução devido à convolução).
+    - **Objetivo**: Detectar padrões locais simples, como bordas e cantos.
+3. **Camada de Subamostragem (S2)**:
+    
+    - **Operação**: Subamostragem (average pooling) com fator 2×22 \times 22×2, reduzindo o tamanho dos mapas para 14×1414 \times 1414×14.
+    - **Objetivo**: Reduzir a dimensionalidade, mantendo informações relevantes e introduzindo invariância a pequenas translações.
+4. **Camada Convolucional 2 (C3)**:
+    
+    - **Operação**: Convolução com 16 filtros (5×55 \times 55×5), conectados a subconjuntos dos mapas da camada anterior.
+    - **Saída**: Mapas de características de tamanho 10×1010 \times 1010×10.
+    - **Objetivo**: Detectar padrões mais complexos, como combinações de bordas e formas.
+5. **Camada de Subamostragem (S4)**:
+    
+    - **Operação**: Average pooling (2×22 \times 22×2), reduzindo os mapas para 5×55 \times 55×5.
+    - **Objetivo**: Similar à camada S2, com maior compactação das informações.
+6. **Camada Convolucional 3 (C5)**:
+    
+    - **Operação**: Convolução com 120 filtros (5×55 \times 55×5), conectados a todos os mapas da camada anterior.
+    - **Saída**: Vetor de 120 características (1D).
+    - **Objetivo**: Reduzir dimensionalidade enquanto extrai características globais.
+7. **Camada Totalmente Conectada (F6)**:
+    
+    - **Operação**: Camada densa com 84 neurônios.
+    - **Objetivo**: Combinar as características extraídas para distinguir entre classes.
+8. **Saída (F7)**:
+    
+    - **Operação**: Camada com 10 neurônios (uma para cada dígito de 0 a 9).
+    - **Ativação**: Softmax, para gerar probabilidades de cada classe.
+    - **Objetivo**: Classificar o dígito manuscrito.
