@@ -2,67 +2,130 @@
 Status: Ativo
 data: 2024-09-27T16:14:00
 tags:
-  - Seaborn
-  - Matriz_correlacao
-  - Python
+  - Rede_Neural
+  - Visao_Computacional
 Contribuição:
   - Hiarley
+Reference: "[[Gradient-Based Learning Applied.pdf]]"
 ---
 ---
-#### Importação de Bibliotecas
+### **Principais Insights e Objetivos**
 
-O código importa as bibliotecas necessárias para análise de dados e visualização:
+- **Aprendizado Automático**: Métodos de aprendizado têm sido fundamentais para o sucesso em aplicações como reconhecimento de fala contínua e escrita manual.
+- **Mudança de Paradigma**: A ênfase está passando de heurísticas manuais para sistemas automáticos, possibilitados pelos avanços em tecnologia e aprendizado de máquina.
 
-```python
-import seaborn as sb
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-```
-- [`seaborn`](vscode-file://vscode-app/c:/Users/Marcos%20Hiarley/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html) (sb): Biblioteca para visualização de dados baseada no Matplotlib.
-- [`pandas`](vscode-file://vscode-app/c:/Users/Marcos%20Hiarley/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html) (pd): Biblioteca para manipulação e análise de dados.
-- [`numpy`](vscode-file://vscode-app/c:/Users/Marcos%20Hiarley/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html) (np): Biblioteca para operações matemáticas e manipulação de arrays.
-- [`matplotlib.pyplot`](vscode-file://vscode-app/c:/Users/Marcos%20Hiarley/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html) (plt): Biblioteca para criação de gráficos.
-
-#### Carregamento dos Dados
-```python
-df = pd.read_csv('kag_risk_factors_cervical_cancer.csv', sep=",", na_values='?')
-```
-
-Carrega o conjunto de dados `kag_risk_factors_cervical_cancer.csv` em um DataFrame do Pandas, tratando os valores '?' como valores ausentes (NaN).
-
-#### Cálculo da Matriz de Correlação
-```python
-correlation_matrix = df.corr()
-```
-Calcula a matriz de correlação entre as variáveis do DataFrame.
-
-#### Configuração e Criação do Mapa de Calor
-```python
-plt.figure(figsize=(12, 8))
-sb.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.5)
-plt.show()
-```
-
-1. Configura o tamanho da figura para 12x8 polegadas.
-2. Cria um mapa de calor da matriz de correlação usando [`seaborn.heatmap`](vscode-file://vscode-app/c:/Users/Marcos%20Hiarley/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html), com anotações das correlações, um esquema de cores 'coolwarm' e linhas de grade com largura de 0.5.
-3. Exibe o gráfico gerado.
 ---
 
+### **Estrutura Tradicional de Reconhecimento de Padrões**
+
+1. **Extrator de Características**:
+    - Transforma padrões em vetores ou símbolos de baixa dimensão, mais fáceis de comparar e invariantes a distorções.
+    - Geralmente é manual e específico para a tarefa, exigindo esforço significativo de design.
+2. **Classificador**:
+    - Treinável e de uso geral, mas dependente da qualidade das características extraídas.
+    - A precisão do reconhecimento é limitada pela habilidade do projetista em definir boas características.
+
+---
+
+### **Desafios e Limitações Históricas**
+
+- Criar bons extratores de características é trabalhoso e precisa ser repetido para cada problema.
+- Os classificadores anteriores não lidavam bem com espaços de alta dimensão, exigindo redução dimensional.
+
+---
+
+### **Avanços Recentes**
+
+1. **Computação Mais Potente**:
+    - Hardware mais rápido e acessível permite métodos intensivos computacionalmente.
+2. **Grandes Conjuntos de Dados**:
+    - Dados reais em grande volume ajudam a superar a dependência de características manuais.
+3. **Técnicas Avançadas de Aprendizado**:
+    - Redes neurais modernas lidam bem com entradas de alta dimensão e decisões complexas.
+
+---
+
+### **Arquiteturas Especializadas**
+
+- **Redes Neurais Convolucionais (CNNs)**:
+    - Incorporam invariâncias de formas 2D usando conexões locais e compartilhamento de pesos.
+    - Projetadas para tarefas como reconhecimento de caracteres manuscritos.
+
+---
+
+### **Estudos de Caso e Aplicações**
+
+1. **Reconhecimento de Dígitos Manuscritos**:
+    - Comparação de diferentes métodos de aprendizado em conjuntos de dados de referência.
+2. **Compreensão de Documentos**:
+    - Integração de módulos treinados para reduzir erros gerais usando Redes de Transdução Treináveis (GTNs).
+    - Aplicações incluem reconhecimento de palavras e frases completas.
+
+---
+
+### **Conceitos Avançados**
+
+1. **Método HOS**:
+    - Técnica clássica para reconhecimento de sequências de palavras.
+2. **Treinamento Baseado em Gradiente**:
+    - Métodos para treinar sem necessidade de segmentação manual.
+3. **NN de Deslocamento Espacial**:
+    - Elimina heurísticas de segmentação ao escanear entradas em várias localizações.
+
+---
+
+### **Implementação Prática**
+
+- **LeNet-5**:
+    - Rede neural convolucional usada em sistemas comerciais, como reconhecimento de cheques bancários.
+    - Processa milhões de cheques mensalmente nos Estados Unidos, mostrando a eficácia de NNs.
 
 
-$$
-$$
+---
+### **Aprendizado a Partir de Dados**
 
+- O aprendizado automático baseia-se em funções parametrizadas para transformar padrões de entrada em saídas desejadas, avaliadas por uma **função de perda** que mede os erros.
+- O objetivo do aprendizado é minimizar a perda média usando um conjunto de dados de treinamento.
+- A capacidade do modelo e o número de amostras afetam a **generalização**. O erro no conjunto de teste diminui com mais dados, mas há um equilíbrio entre capacidade do modelo e precisão no teste.
 
+---
 
+### **Minimização Baseada em Gradiente**
 
+1. **Fundamentos**:
+    - Minimizar funções contínuas é mais simples do que funções discretas.
+    - A abordagem calcula gradientes para ajustar parâmetros e reduzir a função de perda.
+2. **Métodos**:
+    - **Descida do Gradiente**: Algoritmo básico que ajusta os parâmetros iterativamente.
+    - **Gradiente Estocástico (Online)**: Atualiza os parâmetros usando gradientes baseados em exemplos únicos, sendo mais eficiente em grandes conjuntos de dados.
+3. **Avanços**:
+    - Apesar de limitações teóricas, redes neurais profundas se beneficiam de técnicas como **backpropagation**, que calcula gradientes de forma eficiente.
 
+---
 
+### **Backpropagation e Sucessos**
 
+- Popularizado nos anos 80, o algoritmo de backpropagation permite o aprendizado em redes profundas com múltiplas camadas.
+- Avanços ocorreram devido à superação do problema de mínimos locais, especialmente em redes com capacidade excedente.
 
+---
 
+### **Reconhecimento de Escrita Manual**
 
+- Redes Neurais Convolucionais (CNNs) têm excelente desempenho no reconhecimento de dígitos manuscritos.
+- Problemas como segmentação de caracteres (separação de letras vizinhas) são desafiadores. Métodos tradicionais como HOS dependem de heurísticas, mas abordagens baseadas em gradiente, como redes treináveis globalmente, têm mostrado melhores resultados.
 
+---
 
+### **Sistemas Treináveis Globalmente**
 
+- Sistemas de reconhecimento de padrões geralmente envolvem múltiplos módulos (segmentação, reconhecimento, pós-processamento), otimizados individualmente.
+- Uma abordagem mais eficiente é treinar o sistema inteiro para minimizar uma **função de perda global**, representando a probabilidade de erro em nível de documento.
+- Isso é viável se o sistema for projetado como uma rede de módulos diferenciáveis, permitindo o uso de gradientes para ajustar todos os parâmetros.
+
+---
+
+### **Sistemas de Grafos Treináveis (GTNs)**
+
+- Os GTNs são extensões de redes neurais tradicionais, onde a informação de estado é representada por grafos.
+- Cada módulo de um GTN processa grafos para produzir novos grafos, e os gradientes são calculados para treinar todos os módulos conjuntamente.
