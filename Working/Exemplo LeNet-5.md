@@ -8,8 +8,6 @@ Contribuição:
   - Hiarley
 ---
 ---
-
-
 # MNIST Classifier Documentation
 **Este script implementa um classificador de dígitos manuscritos usando a arquitetura LeNet-5 e o dataset MNIST.**
 ## Importações
@@ -96,3 +94,7 @@ while True:
         print("Entrada inválida. Por favor, insira um número entre 0 e 9.")
 ```
 	A função recebe um imput do teclado, sendo um algarismo de 0 a 9, após isso realiza uma busca no dataset definido e retorna os primeiros 5 resultados referente ao número escolhido
+
+## Resultado
+
+![[Pasted image 20241216154958.png]]
