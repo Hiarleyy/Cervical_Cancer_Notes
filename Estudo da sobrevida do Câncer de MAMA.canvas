@@ -1,356 +1,239 @@
 {
-  "edges": [
-    {
-      "fromNode": "614a0cc564ef64cc",
-      "fromSide": "right",
-      "id": "6dc82a7b11e030a3",
-      "toNode": "94d4596368633761",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "614a0cc564ef64cc",
-      "fromSide": "right",
-      "id": "c32c19713bdc3ad2",
-      "toNode": "97c4b6c57bc855f2",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "614a0cc564ef64cc",
-      "fromSide": "right",
-      "id": "61046d5933b0261b",
-      "toNode": "82aaf33c62afd57d",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "9be5a8244d246a1b",
-      "fromSide": "bottom",
-      "id": "00dbe5383f0ca285",
-      "toNode": "614a0cc564ef64cc",
-      "toSide": "top"
-    },
-    {
-      "fromNode": "4fd76f9e38889d8b",
-      "fromSide": "left",
-      "id": "fc24921ecb76212c",
-      "toNode": "3f71a0a637910808",
-      "toSide": "right"
-    },
-    {
-      "fromNode": "9337773c6d1ed269",
-      "fromSide": "left",
-      "id": "b7eff77abfef2036",
-      "toNode": "6c492b5d07c67576",
-      "toSide": "right"
-    },
-    {
-      "fromNode": "7d9e82e6db1262d9",
-      "fromSide": "right",
-      "id": "aa5e6490490f00a8",
-      "toNode": "f546dad51bdd8baa",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "a42d9ad290b35d5a",
-      "fromSide": "left",
-      "id": "22c0926e6b3deaf5",
-      "toNode": "d33c91db5e6b1aea",
-      "toSide": "right"
-    },
-    {
-      "fromNode": "b92a0a3d62806848",
-      "fromSide": "right",
-      "id": "6fa1d6870f45b47b",
-      "toNode": "5589ac7eb93469ba",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "9be5a8244d246a1b",
-      "fromSide": "left",
-      "id": "3b5188577fd5e879",
-      "toNode": "0163a0cec899814a",
-      "toSide": "right"
-    },
-    {
-      "fromNode": "9be5a8244d246a1b",
-      "fromSide": "right",
-      "id": "1a3d973a6b834512",
-      "toNode": "41521364858fddf1",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "94d4596368633761",
-      "fromSide": "right",
-      "id": "bb2a31bd215936d1",
-      "toNode": "d069353ea068c763",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "f546dad51bdd8baa",
-      "fromSide": "right",
-      "id": "aa40528cd6cc7d01",
-      "toNode": "fbdc002652033c94",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "97c4b6c57bc855f2",
-      "fromSide": "right",
-      "id": "b51ff1668d71171e",
-      "toNode": "d069353ea068c763",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "82aaf33c62afd57d",
-      "fromSide": "right",
-      "id": "0023be63e201c15e",
-      "toNode": "d069353ea068c763",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "5589ac7eb93469ba",
-      "fromSide": "right",
-      "id": "c1feb0b788bfbc1f",
-      "toNode": "d1cf6d1b56a024e4",
-      "toSide": "left"
-    }
-  ],
-  "nodes": [
-    {
-      "height": 1900,
-      "id": "8677b64c99372cb8",
-      "label": "Tópicos da Sobrevida do Câncer de MAMA",
-      "styleAttributes": {
-      },
-      "type": "group",
-      "width": 3048,
-      "x": -2880,
-      "y": -2840
-    },
-    {
-      "height": 251,
-      "id": "5589ac7eb93469ba",
-      "styleAttributes": {
-      },
-      "text": "- **Idade do paciente:** Pacientes mais jovens (<40 anos) podem ter tumores mais agressivos.\n- **Comorbidades (diabetes, hipertensão, insuficiência cardíaca):** Podem afetar tolerância ao tratamento e prognóstico geral.\n- **Estado funcional (ECOG ou Karnofsky):** Pacientes com melhor condição física têm maior sobrevida.",
-      "type": "text",
-      "width": 557,
-      "x": -1206,
-      "y": -1211
-    },
-    {
-      "height": 125,
-      "id": "fbdc002652033c94",
-      "styleAttributes": {
-      },
-      "text": "https://www.kaggle.com/datasets/raghadalharbi/breast-cancer-gene-expression-profiles-metabric",
-      "type": "text",
-      "width": 380,
-      "x": -472,
-      "y": -1466
-    },
-    {
-      "file": "Artigos/Algoritmos de Machine Learning para Predição da Sobrevida do Câncer de Mama.md",
-      "height": 455,
-      "id": "41521364858fddf1",
-      "styleAttributes": {
-      },
-      "type": "file",
-      "width": 436,
-      "x": -1105,
-      "y": -2820
-    },
-    {
-      "height": 220,
-      "id": "94d4596368633761",
-      "styleAttributes": {
-      },
-      "text": "### Tumor:\n**T (Tamanho do tumor):** Pequenos tumores (T1) geralmente têm melhor prognóstico do que tumores maiores (T3-T4).",
-      "type": "text",
-      "width": 340,
-      "x": -1009,
-      "y": -2289
-    },
-    {
-      "height": 212,
-      "id": "97c4b6c57bc855f2",
-      "styleAttributes": {
-      },
-      "text": "### Linfonodo:\n**N (Comprometimento linfonodal):** A presença de linfonodos axilares comprometidos (N1-N3) piora a sobrevida.",
-      "type": "text",
-      "width": 340,
-      "x": -1009,
-      "y": -2036
-    },
-    {
-      "height": 69,
-      "id": "d1cf6d1b56a024e4",
-      "styleAttributes": {
-      },
-      "text": "https://www.kaggle.com/datasets/reihanenamdari/breast-cancer",
-      "type": "text",
-      "width": 455,
-      "x": -472,
-      "y": -1120
-    },
-    {
-      "height": 79,
-      "id": "d069353ea068c763",
-      "styleAttributes": {
-      },
-      "text": "https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset/data",
-      "type": "text",
-      "width": 420,
-      "x": -272,
-      "y": -1979
-    },
-    {
-      "height": 189,
-      "id": "f546dad51bdd8baa",
-      "styleAttributes": {
-      },
-      "text": "- **Mutação em BRCA1/BRCA2:** Associada a tumores mais agressivos e risco aumentado de recorrência.\n- **Perfil genômico (ex.: Oncotype DX, MammaPrint):** Pode ajudar a estimar risco de recorrência e necessidade de quimioterapia.",
-      "type": "text",
-      "width": 557,
-      "x": -1226,
-      "y": -1498
-    },
-    {
-      "height": 230,
-      "id": "82aaf33c62afd57d",
-      "styleAttributes": {
-      },
-      "text": "### Metástase:\n**M (Metástase à distância):** Pacientes com metástases (M1) apresentam sobrevida reduzida em comparação com tumores localizados.",
-      "type": "text",
-      "width": 340,
-      "x": -1009,
-      "y": -1789
-    },
-    {
-      "color": "4",
-      "height": 60,
-      "id": "a42d9ad290b35d5a",
-      "styleAttributes": {
-      },
-      "text": "#### Tratamento e Resposta Terapêutica",
-      "type": "text",
-      "width": 396,
-      "x": -1872,
-      "y": -1699
-    },
-    {
-      "color": "1",
-      "height": 75,
-      "id": "9be5a8244d246a1b",
-      "styleAttributes": {
-      },
-      "text": "# Sobrevida do Câncer de MAMA",
-      "type": "text",
-      "width": 560,
-      "x": -1955,
-      "y": -2263
-    },
-    {
-      "file": "Pasted image 20250212111728.png",
-      "height": 491,
-      "id": "0163a0cec899814a",
-      "styleAttributes": {
-      },
-      "type": "file",
-      "width": 742,
-      "x": -2800,
-      "y": -2716
-    },
-    {
-      "color": "4",
-      "height": 60,
-      "id": "4fd76f9e38889d8b",
-      "styleAttributes": {
-      },
-      "text": "#### Subtipo Molecular",
-      "type": "text",
-      "width": 394,
-      "x": -1872,
-      "y": -1979
-    },
-    {
-      "height": 298,
-      "id": "d33c91db5e6b1aea",
-      "styleAttributes": {
-      },
-      "text": "- **Cirurgia e margens cirúrgicas livres:** Melhoram a sobrevida.\n- **Resposta à quimioterapia:** Pacientes com boa resposta a tratamentos neoadjuvantes têm melhor prognóstico\n- **Uso de hormonioterapia e terapia-alvo (ex.: trastuzumabe para HER2+):** Impacta diretamente na sobrevida.",
-      "type": "text",
-      "width": 431,
-      "x": -2549,
-      "y": -1258
-    },
-    {
-      "color": "4",
-      "height": 60,
-      "id": "b92a0a3d62806848",
-      "styleAttributes": {
-      },
-      "text": "#### Fatores Clínicos e Comorbidades",
-      "type": "text",
-      "width": 396,
-      "x": -1872,
-      "y": -1619
-    },
-    {
-      "height": 240,
-      "id": "6c492b5d07c67576",
-      "styleAttributes": {
-      },
-      "text": "- **Grau histológico (Nottingham Score):** Tumores de alto grau são mais agressivos.\n- **Ki-67 (marcador de proliferação celular):** Ki-67 elevado (>20%) indica maior proliferação e pior prognóstico.",
-      "type": "text",
-      "width": 431,
-      "x": -2549,
-      "y": -1559
-    },
-    {
-      "color": "4",
-      "height": 76,
-      "id": "7d9e82e6db1262d9",
-      "styleAttributes": {
-      },
-      "text": "#### Características Genéticas e Biomarcadores",
-      "type": "text",
-      "width": 394,
-      "x": -1872,
-      "y": -1799
-    },
-    {
-      "color": "4",
-      "height": 80,
-      "id": "9337773c6d1ed269",
-      "styleAttributes": {
-      },
-      "text": "#### Grau Histológico e Índice de Proliferação",
-      "type": "text",
-      "width": 394,
-      "x": -1872,
-      "y": -1899
-    },
-    {
-      "color": "4",
-      "height": 100,
-      "id": "614a0cc564ef64cc",
-      "styleAttributes": {
-      },
-      "text": "#### Estadiamento do Câncer (TNM - Tumor, Linfonodo, Metástase)",
-      "type": "text",
-      "width": 394,
-      "x": -1872,
-      "y": -2099
-    },
-    {
-      "height": 328,
-      "id": "3f71a0a637910808",
-      "styleAttributes": {
-      },
-      "text": "- **Luminal A (HR+ / HER2- / Ki-67 baixo):** Melhor prognóstico.\n- **Luminal B (HR+ / HER2+ ou Ki-67 alto):** Prognóstico intermediário.\n- **HER2-positivo (HR- / HER2+):** Tratamento com anti-HER2 pode melhorar a sobrevida.\n- **Triplo-negativo (HR- / HER2-):** Pior prognóstico, maior agressividade.",
-      "type": "text",
-      "width": 431,
-      "x": -2549,
-      "y": -1937
-    }
-  ]
+	"edges":[
+		{"id":"6dc82a7b11e030a3","fromNode":"614a0cc564ef64cc","fromSide":"right","toNode":"94d4596368633761","toSide":"left"},
+		{"id":"c32c19713bdc3ad2","fromNode":"614a0cc564ef64cc","fromSide":"right","toNode":"97c4b6c57bc855f2","toSide":"left"},
+		{"id":"61046d5933b0261b","fromNode":"614a0cc564ef64cc","fromSide":"right","toNode":"82aaf33c62afd57d","toSide":"left"},
+		{"id":"00dbe5383f0ca285","fromNode":"9be5a8244d246a1b","fromSide":"bottom","toNode":"614a0cc564ef64cc","toSide":"top"},
+		{"id":"fc24921ecb76212c","fromNode":"4fd76f9e38889d8b","fromSide":"left","toNode":"3f71a0a637910808","toSide":"right"},
+		{"id":"b7eff77abfef2036","fromNode":"9337773c6d1ed269","fromSide":"left","toNode":"6c492b5d07c67576","toSide":"right"},
+		{"id":"aa5e6490490f00a8","fromNode":"7d9e82e6db1262d9","fromSide":"right","toNode":"f546dad51bdd8baa","toSide":"left"},
+		{"id":"22c0926e6b3deaf5","fromNode":"a42d9ad290b35d5a","fromSide":"left","toNode":"d33c91db5e6b1aea","toSide":"right"},
+		{"id":"6fa1d6870f45b47b","fromNode":"b92a0a3d62806848","fromSide":"right","toNode":"5589ac7eb93469ba","toSide":"left"},
+		{"id":"3b5188577fd5e879","fromNode":"9be5a8244d246a1b","fromSide":"left","toNode":"0163a0cec899814a","toSide":"right"},
+		{"id":"1a3d973a6b834512","fromNode":"9be5a8244d246a1b","fromSide":"right","toNode":"41521364858fddf1","toSide":"left"},
+		{"id":"bb2a31bd215936d1","fromNode":"94d4596368633761","fromSide":"right","toNode":"d069353ea068c763","toSide":"left"},
+		{"id":"aa40528cd6cc7d01","fromNode":"f546dad51bdd8baa","fromSide":"right","toNode":"fbdc002652033c94","toSide":"left"},
+		{"id":"b51ff1668d71171e","fromNode":"97c4b6c57bc855f2","fromSide":"right","toNode":"d069353ea068c763","toSide":"left"},
+		{"id":"0023be63e201c15e","fromNode":"82aaf33c62afd57d","fromSide":"right","toNode":"d069353ea068c763","toSide":"left"},
+		{"id":"c1feb0b788bfbc1f","fromNode":"5589ac7eb93469ba","fromSide":"right","toNode":"d1cf6d1b56a024e4","toSide":"left"}
+	],
+	"nodes":[
+		{
+			"id":"8677b64c99372cb8",
+			"styleAttributes":{},
+			"type":"group",
+			"x":-2880,
+			"y":-2840,
+			"width":3048,
+			"height":1900,
+			"label":"Tópicos da Sobrevida do Câncer de MAMA"
+		},
+		{
+			"id":"d33c91db5e6b1aea",
+			"styleAttributes":{},
+			"text":"- **Cirurgia e margens cirúrgicas livres:** Melhoram a sobrevida.\n- **Resposta à quimioterapia:** Pacientes com boa resposta a tratamentos neoadjuvantes têm melhor prognóstico\n- **Uso de hormonioterapia e terapia-alvo (ex.: trastuzumabe para HER2+):** Impacta diretamente na sobrevida.",
+			"type":"text",
+			"x":-2549,
+			"y":-1258,
+			"width":431,
+			"height":298
+		},
+		{
+			"file":"Artigos/Algoritmos de Machine Learning para Predição da Sobrevida do Câncer de Mama.md",
+			"id":"41521364858fddf1",
+			"styleAttributes":{},
+			"type":"file",
+			"x":-1105,
+			"y":-2820,
+			"width":436,
+			"height":455,
+		},
+		{
+			"id":"f546dad51bdd8baa",
+			"styleAttributes":{},
+			"text":"- **Mutação em BRCA1/BRCA2:** Associada a tumores mais agressivos e risco aumentado de recorrência.\n- **Perfil genômico (ex.: Oncotype DX, MammaPrint):** Pode ajudar a estimar risco de recorrência e necessidade de quimioterapia.",
+			"type":"text",
+			"x":-1226,
+			"y":-1498,
+			"width":557,
+			"height":189
+		},
+		{
+			"id":"9be5a8244d246a1b",
+			"styleAttributes":{},
+			"text":"# Sobrevida do Câncer de MAMA",
+			"type":"text",
+			"x":-1955,
+			"y":-2263,
+			"width":560,
+			"height":75,
+			"color":"1"
+		},
+		{
+			"file":"Pasted image 20250212111728.png",
+			"id":"0163a0cec899814a",
+			"styleAttributes":{},
+			"type":"file",
+			"x":-2800,
+			"y":-2716,
+			"width":742,
+			"height":491,
+		},
+		{
+			"id":"4fd76f9e38889d8b",
+			"styleAttributes":{},
+			"text":"#### Subtipo Molecular",
+			"type":"text",
+			"x":-1872,
+			"y":-1979,
+			"width":394,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"7d9e82e6db1262d9",
+			"styleAttributes":{},
+			"text":"#### Características Genéticas e Biomarcadores",
+			"type":"text",
+			"x":-1872,
+			"y":-1799,
+			"width":394,
+			"height":76,
+			"color":"4"
+		},
+		{
+			"id":"9337773c6d1ed269",
+			"styleAttributes":{},
+			"text":"#### Grau Histológico e Índice de Proliferação",
+			"type":"text",
+			"x":-1872,
+			"y":-1899,
+			"width":394,
+			"height":80,
+			"color":"4"
+		},
+		{
+			"id":"614a0cc564ef64cc",
+			"styleAttributes":{},
+			"text":"#### Estadiamento do Câncer (TNM - Tumor, Linfonodo, Metástase)",
+			"type":"text",
+			"x":-1872,
+			"y":-2099,
+			"width":394,
+			"height":100,
+			"color":"4"
+		},
+		{
+			"id":"3f71a0a637910808",
+			"styleAttributes":{},
+			"text":"- **Luminal A (HR+ / HER2- / Ki-67 baixo):** Melhor prognóstico.\n- **Luminal B (HR+ / HER2+ ou Ki-67 alto):** Prognóstico intermediário.\n- **HER2-positivo (HR- / HER2+):** Tratamento com anti-HER2 pode melhorar a sobrevida.\n- **Triplo-negativo (HR- / HER2-):** Pior prognóstico, maior agressividade.",
+			"type":"text",
+			"x":-2549,
+			"y":-1937,
+			"width":431,
+			"height":328
+		},
+		{
+			"id":"5589ac7eb93469ba",
+			"styleAttributes":{},
+			"text":"- **Idade do paciente:** Pacientes mais jovens (<40 anos) podem ter tumores mais agressivos.\n- **Comorbidades (diabetes, hipertensão, insuficiência cardíaca):** Podem afetar tolerância ao tratamento e prognóstico geral.\n- **Estado funcional (ECOG ou Karnofsky):** Pacientes com melhor condição física têm maior sobrevida.",
+			"type":"text",
+			"x":-1206,
+			"y":-1211,
+			"width":557,
+			"height":251
+		},
+		{
+			"id":"fbdc002652033c94",
+			"styleAttributes":{},
+			"text":"https://www.kaggle.com/datasets/raghadalharbi/breast-cancer-gene-expression-profiles-metabric",
+			"type":"text",
+			"x":-472,
+			"y":-1466,
+			"width":380,
+			"height":125
+		},
+		{
+			"id":"94d4596368633761",
+			"styleAttributes":{},
+			"text":"### Tumor:\n**T (Tamanho do tumor):** Pequenos tumores (T1) geralmente têm melhor prognóstico do que tumores maiores (T3-T4).",
+			"type":"text",
+			"x":-1009,
+			"y":-2289,
+			"width":340,
+			"height":220
+		},
+		{
+			"id":"97c4b6c57bc855f2",
+			"styleAttributes":{},
+			"text":"### Linfonodo:\n**N (Comprometimento linfonodal):** A presença de linfonodos axilares comprometidos (N1-N3) piora a sobrevida.",
+			"type":"text",
+			"x":-1009,
+			"y":-2036,
+			"width":340,
+			"height":212
+		},
+		{
+			"id":"d1cf6d1b56a024e4",
+			"styleAttributes":{},
+			"text":"https://www.kaggle.com/datasets/reihanenamdari/breast-cancer",
+			"type":"text",
+			"x":-472,
+			"y":-1120,
+			"width":455,
+			"height":69
+		},
+		{
+			"id":"d069353ea068c763",
+			"styleAttributes":{},
+			"text":"https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset/data",
+			"type":"text",
+			"x":-272,
+			"y":-1979,
+			"width":420,
+			"height":79
+		},
+		{
+			"id":"82aaf33c62afd57d",
+			"styleAttributes":{},
+			"text":"### Metástase:\n**M (Metástase à distância):** Pacientes com metástases (M1) apresentam sobrevida reduzida em comparação com tumores localizados.",
+			"type":"text",
+			"x":-1009,
+			"y":-1789,
+			"width":340,
+			"height":230
+		},
+		{
+			"id":"a42d9ad290b35d5a",
+			"styleAttributes":{},
+			"text":"#### Tratamento e Resposta Terapêutica",
+			"type":"text",
+			"x":-1872,
+			"y":-1699,
+			"width":396,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"b92a0a3d62806848",
+			"styleAttributes":{},
+			"text":"#### Fatores Clínicos e Comorbidades",
+			"type":"text",
+			"x":-1872,
+			"y":-1619,
+			"width":396,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"6c492b5d07c67576",
+			"styleAttributes":{},
+			"text":"- **Grau histológico (Nottingham Score):** Tumores de alto grau são mais agressivos.\n- **Ki-67 (marcador de proliferação celular):** Ki-67 elevado (>20%) indica maior proliferação e pior prognóstico.",
+			"type":"text",
+			"x":-2549,
+			"y":-1559,
+			"width":431,
+			"height":240
+		}
+	]
 }
