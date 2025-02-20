@@ -29,16 +29,6 @@
 			"label":"Tópicos da Sobrevida do Câncer de MAMA"
 		},
 		{
-			"id":"d33c91db5e6b1aea",
-			"styleAttributes":{},
-			"text":"- **Cirurgia e margens cirúrgicas livres:** Melhoram a sobrevida.\n- **Resposta à quimioterapia:** Pacientes com boa resposta a tratamentos neoadjuvantes têm melhor prognóstico\n- **Uso de hormonioterapia e terapia-alvo (ex.: trastuzumabe para HER2+):** Impacta diretamente na sobrevida.",
-			"type":"text",
-			"x":-2549,
-			"y":-1258,
-			"width":431,
-			"height":298
-		},
-		{
 			"file":"Artigos/Algoritmos de Machine Learning para Predição da Sobrevida do Câncer de Mama.md",
 			"id":"41521364858fddf1",
 			"styleAttributes":{},
@@ -234,6 +224,16 @@
 			"y":-1559,
 			"width":431,
 			"height":240
+		},
+		{
+			"id":"d33c91db5e6b1aea",
+			"styleAttributes":{},
+			"text":"- **Cirurgia e margens cirúrgicas livres:** Melhoram a sobrevida.\n- **Resposta à quimioterapia:** Pacientes com boa resposta a tratamentos neoadjuvantes têm melhor prognóstico\n- **Uso de hormonioterapia e terapia-alvo (ex.: trastuzumabe para HER2+):** Impacta diretamente na sobrevida.",
+			"type":"text",
+			"x":-2549,
+			"y":-1258,
+			"width":431,
+			"height":298
 		}
 	]
 }
